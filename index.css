@@ -443,14 +443,14 @@ body:not(.user-is-tabbing) a:focus {
 .kc {
     background: linear-gradient(rgba(255, 0, 0, 0), rgba(136, 0, 0, 0)), 
         url('./images/kc__header.png');
-    height: 80vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-size: var(--font-size-normal);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 900px) {
     .kc {
         text-align: center;
     }
