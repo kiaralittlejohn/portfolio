@@ -462,13 +462,28 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
-/* Ensure the basic Flexbox setup for the header content */
+.work__image-box {
+    margin-bottom: var(--gutter-normal); /* Default margin for larger image boxes */
+    /* Other general styles for main project image boxes */
+}
+
+@media(min-width: 901px) {
+    .work__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem; /* Original layout for main project images */
+    }
+}
+
+
+/* --- Styles for the Header/Icon combo --- */
+
+/* The container for the text and icon */
 .work__header-content {
     display: flex;
-    align-items: center; /* Vertically centers the text and image */
+    align-items: center; /* Vertically centers text and image */
     gap: var(--gutter-small); /* Space between the text and image */
     margin-bottom: var(--gutter-small); /* Space below this whole header unit */
-    flex-wrap: wrap; /* Allow items to wrap to next line on small screens */
+    flex-wrap: wrap; /* Allows wrapping on very small screens */
 }
 
 /* Adjust margin for h3 when it's part of this header content */
@@ -477,26 +492,28 @@ body:not(.user-is-tabbing) a:focus {
     flex-shrink: 0; /* Prevent the text from shrinking */
 }
 
-/* NEW: Styles specifically for the image box used as an icon next to a heading.
-   This new class (.work__icon-image-box) prevents conflicts with the larger project images.
-*/
+/* Specific styles for the image box when it's used as an icon in the header */
 .work__icon-image-box {
-    margin-bottom: 0 !important; /* Override any general work__image-box margin */
-    width: 60px; /* Set a specific, small width for the icon */
+    /* Crucial: Override any default margin from .work__image-box */
+    margin-bottom: 0 !important;
+    margin-left: 0 !important; /* In case the 901px media query is affecting it */
+
+    width: 60px;  /* Set a specific, small width for the icon */
     height: 60px; /* Set a specific, small height for the icon (making it square) */
-    flex-shrink: 0; /* Prevent the icon from shrinking */
+    flex-shrink: 0; /* Prevent the icon container from shrinking */
     overflow: hidden; /* Hide any parts of the image that go beyond the box */
-    border-radius: 50%; /* Optional: make it a circle for a profile pic/icon look */
-    /* If you want it to be square, remove border-radius */
+    border-radius: 50%; /* Optional: make it a circle */
+    /* If you want a square, remove border-radius. */
+    /* background-color: grey; /* For debugging: see the box */
 }
 
+/* Styles for the image *inside* the icon box */
 .work__icon-image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Make sure the image fills the 60x60px space without distortion */
     display: block; /* Removes any default extra space below image */
 }
-
 /* You might want to adjust the general .work__image-box margin-bottom if it's applying unnecessarily */
 /* For your main project images: */
 .work__image-box:not(.work__icon-image-box) { /* Exclude the icon version */
