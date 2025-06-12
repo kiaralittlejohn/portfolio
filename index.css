@@ -445,6 +445,8 @@ body:not(.user-is-tabbing) a:focus {
         url('./images/kc__header.png');
     height: 50vh;
     width: 100%;
+    margin: 0;
+    padding:0;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
