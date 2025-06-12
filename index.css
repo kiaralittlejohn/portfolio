@@ -462,6 +462,35 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+.work__header-content {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers items (h3 and image) */
+    gap: var(--gutter-small); /* Adds space between the text and image */
+    margin-bottom: var(--gutter-small); /* Adjust as needed to space from paragraph */
+}
+
+/* You might want to adjust the margin-bottom for h3 if it's no longer needed */
+h3 {
+    /* font-size: var(--font-size-medium-1); */ /* Keep original styles */
+    /* margin-bottom: var(--gutter-small); */ /* You might remove or reduce this margin if handled by gap */
+    margin-bottom: 0; /* Set to 0 if gap handles spacing */
+    flex-shrink: 0; /* Prevent the text from shrinking if image is large */
+}
+
+/* Ensure the image within the header content is reasonably sized */
+.work__header-content .work__image-box {
+    margin-bottom: 0; /* Remove default margin from work__image-box here */
+    width: 60px; /* Adjust this value to control the image size next to the text */
+    height: auto;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.work__header-content .work__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Or 'contain', depending on how you want it to fill */
+    display: block; /* Removes extra space below image */
+}
 
 .work__box {
     display: flex;
