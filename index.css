@@ -1,6 +1,13 @@
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure they take up the full width */
+    height: 100%; /* If you want them to take full height as well */
+    overflow-x: hidden; /* Prevent horizontal scrollbar if elements slightly exceed width */
+}
 
 @font-face {
     font-family: 'Hk Grotesk';
