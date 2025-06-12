@@ -494,6 +494,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Specific styles for the image box when it's used as an icon in the header */
 .work__icon-image-box {
+    /* Crucial: Override any default margin from .work__image-box */
     margin-bottom: 0 !important;
     margin-left: 0 !important;
 
@@ -501,15 +502,13 @@ body:not(.user-is-tabbing) a:focus {
     height: 60px; /* Set a specific, small height for the icon (making it square) */
     flex-shrink: 0; /* Prevent the icon container from shrinking */
 
-    overflow: hidden; /* This should now correctly hide content that overflows the box */
-    border-radius: 50%; /* Make it a circle */
-    /* background-color: grey; /* Keep for debugging, then remove */
+    /* ***** IMPORTANT FOR THIS ISSUE: ***** */
+    overflow: hidden;
+    transform: translateZ(0); /* This hides content that overflows the box */
+    /* Ensure this is NOT overridden elsewhere. */
 
-    /* The transform: translateZ(0); is okay, but not the primary fix here.
-       Keep it if you feel it helps with rendering, or remove it for simplicity
-       once the core issue is solved.
-    */
-    transform: translateZ(0);
+    border-radius: 50%; /* Make it a circle */
+    /* background-color: grey; /* For debugging: see the box */
 }
 
 /* Styles for the image *inside* the icon box */
@@ -518,11 +517,6 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%; /* Make the image fill the container's height */
     object-fit: cover; /* This makes the image fill the box, cropping if necessary */
     display: block; /* Removes any default extra space below inline images */
-
-    /* ***** CRITICAL ADDITION FOR THIS ISSUE: ***** */
-    /* Ensure no max-width is overriding this for the image itself */
-    max-width: 100% !important; /* Force the image not to exceed its parent's width */
-    box-sizing: border-box; /* Good practice for images too */
 }
 
 /* You might want to adjust the general .work__image-box margin-bottom if it's applying unnecessarily */
