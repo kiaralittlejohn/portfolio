@@ -156,7 +156,7 @@ h2::after {
 
 h3 {
     font-size: var(--font-size-medium-1);
-    margin-bottom: var(--gutter-small); 
+    margin-bottom: var(--gutter-small);
 }
 
 @media(max-width: 500px) {
@@ -464,14 +464,22 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 .work__image-box {
     margin-bottom: var(--gutter-normal); /* Default margin for larger image boxes */
+    /* Other general styles for main project image boxes */
 }
 
 @media(min-width: 901px) {
     .work__image-box {
-        flex: 1; /* Allows it to take up space in a flex container */
+        flex: 1;
         margin: 0 0 0 10rem; /* Original layout for main project images */
     }
 }
+
+.work__icon-image-box a {
+    display: block; /* Make the link fill its container */
+    width: 100%;
+    height: 100%;
+}
+
 
 /* --- Styles for the Header/Icon combo --- */
 
