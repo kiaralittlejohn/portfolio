@@ -111,7 +111,7 @@ section {
 }
 
 img {
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
 }
 
