@@ -474,12 +474,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.work__icon-image-box a {
-    display: block; /* Make the link fill its container */
-    width: 100%;
-    height: 100%;
-}
-
 
 /* --- Styles for the Header/Icon combo --- */
 
