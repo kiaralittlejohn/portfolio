@@ -503,8 +503,7 @@ body:not(.user-is-tabbing) a:focus {
     flex-shrink: 0; /* Prevent the icon container from shrinking */
 
     /* ***** IMPORTANT FOR THIS ISSUE: ***** */
-    overflow: hidden;
-    transform: translateZ(0); /* This hides content that overflows the box */
+    overflow: hidden; /* This hides content that overflows the box */
     /* Ensure this is NOT overridden elsewhere. */
 
     border-radius: 50%; /* Make it a circle */
