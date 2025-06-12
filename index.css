@@ -462,14 +462,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box {
     display: flex;
-    flex-direction: column-reverse; /* Default for mobile and smaller desktops */
-    align-items: initial; /* Or center if you prefer */
+    align-items: center;
 }
 
-@media(min-width: 901px) { /* Or whatever breakpoint makes sense for side-by-side */
+@media(max-width: 1920px) {
     .work__box {
-        flex-direction: row; /* Switch to row for larger screens */
-        align-items: center; /* Align items for horizontal layout */
+        align-items: initial;
+        flex-direction: column-reverse;
     }
 }
 
