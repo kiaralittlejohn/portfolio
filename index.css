@@ -462,35 +462,54 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
+/* Ensure the basic Flexbox setup for the header content */
 .work__header-content {
-    display: flex; /* Enables flexbox */
-    align-items: center; /* Vertically centers items (h3 and image) */
-    gap: var(--gutter-small); /* Adds space between the text and image */
-    margin-bottom: var(--gutter-small); /* Adjust as needed to space from paragraph */
+    display: flex;
+    align-items: center; /* Vertically centers the text and image */
+    gap: var(--gutter-small); /* Space between the text and image */
+    margin-bottom: var(--gutter-small); /* Space below this whole header unit */
+    flex-wrap: wrap; /* Allow items to wrap to next line on small screens */
 }
 
-/* You might want to adjust the margin-bottom for h3 if it's no longer needed */
-h3 {
-    /* font-size: var(--font-size-medium-1); */ /* Keep original styles */
-    /* margin-bottom: var(--gutter-small); */ /* You might remove or reduce this margin if handled by gap */
-    margin-bottom: 0; /* Set to 0 if gap handles spacing */
-    flex-shrink: 0; /* Prevent the text from shrinking if image is large */
+/* Adjust margin for h3 when it's part of this header content */
+.work__header-content h3 {
+    margin-bottom: 0; /* Remove default h3 margin that would push things down */
+    flex-shrink: 0; /* Prevent the text from shrinking */
 }
 
-/* Ensure the image within the header content is reasonably sized */
-.work__header-content .work__image-box {
-    margin-bottom: 0; /* Remove default margin from work__image-box here */
-    width: 60px; /* Adjust this value to control the image size next to the text */
-    height: auto;
-    flex-shrink: 0; /* Prevent the image from shrinking */
+/* NEW: Styles specifically for the image box used as an icon next to a heading.
+   This new class (.work__icon-image-box) prevents conflicts with the larger project images.
+*/
+.work__icon-image-box {
+    margin-bottom: 0 !important; /* Override any general work__image-box margin */
+    width: 60px; /* Set a specific, small width for the icon */
+    height: 60px; /* Set a specific, small height for the icon (making it square) */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+    overflow: hidden; /* Hide any parts of the image that go beyond the box */
+    border-radius: 50%; /* Optional: make it a circle for a profile pic/icon look */
+    /* If you want it to be square, remove border-radius */
 }
 
-.work__header-content .work__image {
+.work__icon-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Or 'contain', depending on how you want it to fill */
-    display: block; /* Removes extra space below image */
+    object-fit: cover; /* Make sure the image fills the 60x60px space without distortion */
+    display: block; /* Removes any default extra space below image */
 }
+
+/* You might want to adjust the general .work__image-box margin-bottom if it's applying unnecessarily */
+/* For your main project images: */
+.work__image-box:not(.work__icon-image-box) { /* Exclude the icon version */
+    margin-bottom: var(--gutter-normal); /* Keep original margin for large images */
+}
+
+@media(min-width: 901px) {
+    /* Ensure the main project image box still behaves as intended on larger screens */
+    .work__image-box:not(.work__icon-image-box) {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+} /*end of gemini code*/
 
 .work__box {
     display: flex;
