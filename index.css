@@ -531,8 +531,8 @@ body:not(.user-is-tabbing) a:focus {
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* responsive columns */
-  grid-gap: 20px; /* space between images */
-  padding: 20px;
+  grid-gap: 10px; /* space between images */
+  padding: 10px;
 }
 
 .image-grid img {
