@@ -468,7 +468,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media(max-width: 1920px) {
+@media(max-width: 800px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
@@ -502,7 +502,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code {
     display: block;
-    height: 1rem;
+    height: 4rem;
     margin-left: var(--gutter-normal);
     transition: all .3s;
 }
