@@ -502,7 +502,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code {
     display: block;
-    height: 3rem;
+    height: 1rem;
     margin-left: var(--gutter-normal);
     transition: all .3s;
 }
@@ -524,7 +524,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 900px) {
     .work__code {
-        height: 2rem;
+        height: 4rem;
     }
 }
 
