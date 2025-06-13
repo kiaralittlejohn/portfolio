@@ -468,7 +468,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1200px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
@@ -526,6 +526,20 @@ body:not(.user-is-tabbing) a:focus {
     .work__code {
         height: 4rem;
     }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* responsive columns */
+  grid-gap: 20px; /* space between images */
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional rounded corners */
+  display: block;
 }
 
 /* --------------------------------------- */
