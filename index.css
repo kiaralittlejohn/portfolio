@@ -519,9 +519,13 @@ body:not(.user-is-tabbing) a:focus {
   display: block;
 }
 
-video {
-  display: block; 
+.image-grid video {
+  display: block;
+  width: 100%; /* Make them fill the grid column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional, matches your image styling */
 }
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
