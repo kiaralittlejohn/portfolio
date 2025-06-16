@@ -489,6 +489,7 @@ body:not(.user-is-tabbing) a:focus {
     display: block;
     height: 4rem;
     transition: all .3s;
+    margin-left: var(--gutter-normal);
 }
 
 .work__code:hover {
@@ -644,7 +645,6 @@ body:not(.user-is-tabbing) a:focus {
 .social-media { /* Target the wrapper div */
     display: flex; /* Make it a flex container */
     justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Align them vertically if they have different heights */
     gap: var(--gutter-small); /* Add space between items using the gap property */
     /* Alternatively, if you need older browser support or more custom spacing:
        margin-right: var(--gutter-small); on the a:not(:last-child)
