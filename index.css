@@ -642,16 +642,9 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
-.social-media { /* Target the wrapper div */
-    display: flex; /* Make it a flex container */
-    justify-content: center; /* Center the icons horizontally */
-    gap: var(--gutter-small); /* Add space between items using the gap property */
-    /* Alternatively, if you need older browser support or more custom spacing:
-       margin-right: var(--gutter-small); on the a:not(:last-child)
-    */
-}
-
-/* Remove any potential bottom margin from the H3 if it's too close */
-.social-media h3 {
-    margin-bottom: var(--gutter-small); /* Or 0 if you want it right above the icons */
+.social.media { /* This targets the specific div wrapping your social icons */
+    display: flex; /* This will make its children (your <a> tags) arrange horizontally */
+    justify-content: center; /* This will horizontally center the icons */
+    align-items: center; /* This will vertically align them if they have different heights */
+    gap: var(--gutter-small); /* Add some space between the icons */
 }
