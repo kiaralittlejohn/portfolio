@@ -452,12 +452,12 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.work__boxes video {
+.work__box video {
   display: block;
   width: 100%; /* Make them fill the grid column */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional, matches your image styling */
-  align-items: center;
+  align-items: ;
 }
 
 .work__box:not(:last-child) {
