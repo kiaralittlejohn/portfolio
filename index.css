@@ -140,6 +140,10 @@ h3 {
     }
 }
 
+p {
+    margin-bottom: 10rem;
+}
+
 h2 {
     font-size: var(--font-size-large);
     margin-bottom: var(--gutter-medium);
@@ -477,10 +481,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     flex: 0 0 30%;
-}
-
-.work__text p {
-    margin-bottom: 10rem;
 }
 
 .work__list {
