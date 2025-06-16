@@ -520,16 +520,19 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .video__box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* responsive columns */
-  grid-gap: 10px; /* space between images */
-  padding: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px
 }
+
 @media(max-width: 1920px) {
     .video__box {
-        height: 4rem;
+        align-items: center;
+        flex-direction: column-reverse;
     }
 }
+
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
