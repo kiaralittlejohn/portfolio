@@ -452,7 +452,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.work__box video {
+.work__boxes video {
   display: block;
   width: 100%; /* Make them fill the grid column */
   height: auto; /* Maintain aspect ratio */
