@@ -519,21 +519,6 @@ body:not(.user-is-tabbing) a:focus {
   display: block;
 }
 
-.video__box {
-    display: flex;
-    align-items: center;
-    padding: 10px
-}
-
-@media(max-width: 1920px) {
-    .video__box {
-        align-items: center;
-        flex-direction: column-reverse;
-    }
-}
-
-
-
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
