@@ -641,3 +641,18 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+.social-media { /* Target the wrapper div */
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align them vertically if they have different heights */
+    gap: var(--gutter-small); /* Add space between items using the gap property */
+    /* Alternatively, if you need older browser support or more custom spacing:
+       margin-right: var(--gutter-small); on the a:not(:last-child)
+    */
+}
+
+/* Remove any potential bottom margin from the H3 if it's too close */
+.social-media h3 {
+    margin-bottom: var(--gutter-small); /* Or 0 if you want it right above the icons */
+}
