@@ -518,7 +518,10 @@ body:not(.user-is-tabbing) a:focus {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* responsive columns */
   grid-gap: 10px; /* space between images */
   padding: 10px;
-  margin-bottom: 10rem;
+}
+
+.image-grid:not(:last-child) {
+    margin-bottom: 10rem;
 }
 
 .image-grid img {
