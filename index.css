@@ -652,7 +652,6 @@ body:not(.user-is-tabbing) a:focus {
 /* New class for your social icons */
 .social__icon {
     height: 4rem; /* Keep the size consistent */
-    display: inline-block; /* Or remove entirely if flex container handles it */
     /* If you want hover effects similar to work__code, copy them here */
     transition: all .3s;
 }
