@@ -142,7 +142,7 @@ h3 {
 
 h2 {
     font-size: var(--font-size-large);
-    margin-bottom: var(--gutter-small);
+    margin-bottom: var(--gutter-large);
 }
 
 h2::after {
