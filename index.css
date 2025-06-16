@@ -644,7 +644,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .social.media { /* This targets the specific div wrapping your social icons */
     display: flex; /* This will make its children (your <a> tags) arrange horizontally */
-    justify-content: center; /* This will horizontally center the icons */
     align-items: center; /* This will vertically align them if they have different heights */
     gap: var(--gutter-small); /* Add some space between the icons */
 } 
@@ -652,6 +651,7 @@ body:not(.user-is-tabbing) a:focus {
 /* New class for your social icons */
 .social__icon {
     height: 4rem; /* Keep the size consistent */
+    display: inline-block; /* Or remove entirely if flex container handles it */
     /* If you want hover effects similar to work__code, copy them here */
     transition: all .3s;
 }
