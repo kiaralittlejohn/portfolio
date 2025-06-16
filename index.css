@@ -106,7 +106,7 @@ body {
 }
 
 section {
-    padding: var(--gutter-huge) 0;
+    padding: var(--gutter-medium) 0;
     border-bottom: var(--border-light);
 }
 
