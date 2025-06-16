@@ -140,6 +140,12 @@ h3 {
     }
 }
 
+h1 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
+    
+}
+
 h2 {
     font-size: var(--font-size-large);
     margin-bottom: var(--gutter-medium);
@@ -457,7 +463,7 @@ body:not(.user-is-tabbing) a:focus {
   width: 100%; /* Make them fill the grid column */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional, matches your image styling */
-  align-items: ;
+  align-items: center;
 }
 
 .work__box:not(:last-child) {
