@@ -520,7 +520,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 video {
-  vertical-align: top; /* Or middle, or bottom */
+  display: block; 
 }
 
 /* --------------------------------------- */
