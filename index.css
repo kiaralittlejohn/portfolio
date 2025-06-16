@@ -520,6 +520,10 @@ body:not(.user-is-tabbing) a:focus {
   padding: 10px;
 }
 
+.image-grid:not(:last-child) {
+    margin-bottom: 10rem;
+}
+
 .image-grid img {
   width: 100%;
   height: auto;
