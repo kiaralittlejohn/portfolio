@@ -519,6 +519,10 @@ body:not(.user-is-tabbing) a:focus {
   display: block;
 }
 
+video {
+  vertical-align: top; /* Or middle, or bottom */
+}
+
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
