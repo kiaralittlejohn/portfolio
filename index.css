@@ -470,7 +470,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media(max-width: 1920px) {
     .work__box {
-        align-items: initial;
+        align-items: center;
         flex-direction: column-reverse;
     }
 }
