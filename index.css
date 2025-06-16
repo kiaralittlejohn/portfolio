@@ -642,14 +642,12 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
-/*.social.media { /* This targets the specific div wrapping your social icons */
-/*    display: flex; /* This will make its children (your <a> tags) arrange horizontally */
-/*    justify-content: center; /* This will horizontally center the icons */
-  /*  align-items: center; /* This will vertically align them if they have different heights */
-    /*gap: var(--gutter-small); /* Add some space between the icons */
+.social.media { /* This targets the specific div wrapping your social icons */
+    display: flex; /* This will make its children (your <a> tags) arrange horizontally */
+    align-items: center; /* This will vertically align them if they have different heights */
+    gap: var(--gutter-small); /* Add some space between the icons */
 } 
 
-/* New class for your social icons */
 .social__icon {
     height: 4rem; /* Keep the size consistent */
     display: inline-block; /* Or remove entirely if flex container handles it */
@@ -659,4 +657,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .social__icon:hover {
     transform: scale(1.2); /* Example hover effect */
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically (h3 and .social.media) */
+    align-items: flex-start; /* Align children to the start of the cross-axis (left) */
+}
+
+/* Optional: Adjust margin for the h3 inside this container if needed */
+.social-media-container h3 {
+    margin-bottom: var(--gutter-small); /* Or a smaller value, adjust as needed */
 }
