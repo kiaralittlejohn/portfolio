@@ -141,8 +141,7 @@ h3 {
 }
 
 h1 {
-    font-size: var(--font-size-large);
-    margin-bottom: var(--gutter-medium);
+    margin-top: var(--gutter-small) 0;
     
 }
 
