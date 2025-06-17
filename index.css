@@ -642,9 +642,9 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
-@media(min-width: 300px) {
+@media(min-width: 10px) {
     .footer__text {
-        flex: 0 0 35%;
+        flex: 0 0 10%;
     }
 }
 
