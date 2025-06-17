@@ -644,7 +644,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .social.media { /* This targets the specific div wrapping your social icons */
     display: flex; /* This will make its children (your <a> tags) arrange horizontally */
-    align-items: center; /* This will vertically align them if they have different heights */
     gap: var(--gutter-small); /* Add some space between the icons */
 } 
 
