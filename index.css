@@ -642,6 +642,13 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
+@media(min-width: 300px) {
+    .footer__text {
+        flex: 0 0 35%;
+    }
+}
+
+
 .social.media { /* This targets the specific div wrapping your social icons */
     display: flex; /* This will make its children (your <a> tags) arrange horizontally */
     gap: var(--gutter-small); /* Add some space between the icons */
