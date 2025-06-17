@@ -639,13 +639,8 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 20px) {
     .footer {
         padding: var(--gutter-medium) 0;
+        flex: 0 0 35%;
     } 
-}
-
-@media(min-width: 10px) {
-    .footer__text {
-        flex: 0 0 10%;
-    }
 }
 
 
