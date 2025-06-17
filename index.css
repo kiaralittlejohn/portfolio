@@ -610,6 +610,12 @@ body:not(.user-is-tabbing) a:focus {
     padding: var(--gutter-medium) 0 var(--gutter-normal);
 }
 
+.footer p {
+    max-width: var(--container-small-width); /* Adjust this variable or use a fixed rem value */
+    margin-left: auto; /* Center the paragraph horizontally */
+    margin-right: auto; /* Center the paragraph horizontally */
+}
+
 .footer__social-links {
     display: flex;
     justify-content: center;
