@@ -611,9 +611,9 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .footer p {
-    max-width: 20rem; /* Adjust this variable or use a fixed rem value */
-    margin-left: auto; /* Center the paragraph horizontally */
-    margin-right: auto; /* Center the paragraph horizontally */
+    max-width: 10rem; /* Adjust this variable or use a fixed rem value */
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .footer__social-links {
