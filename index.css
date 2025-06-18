@@ -413,7 +413,7 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
-@media(max-width:500x){
+@media(max-width:500px){
     .header {
         background: linear-gradient(rgba(48, 42, 133, 0.244), rgba(0, 0, 0, 0)), 
             url('./images/Header_mobile.jpeg'); /* Your mobile optimized image */
