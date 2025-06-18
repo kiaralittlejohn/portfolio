@@ -677,3 +677,28 @@ body:not(.user-is-tabbing) a:focus {
 .social__icon:hover {
     transform: scale(1.2); /* Example hover effect */
 }
+
+/* Lightbox Styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.lightbox-content {
+  max-width: 90%; /* Adjust as needed */
+  max-height: 90%;
+  object-fit: contain; /* Prevents image distortion */
+  border-radius: 10px;
+}
+
+.lightbox.active {
+  display: flex; /* Show the lightbox */
+}
