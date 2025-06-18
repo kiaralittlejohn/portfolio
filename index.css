@@ -405,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(48, 42, 133, 0.244), rgba(0, 0, 0, 0)), 
-        url('./images/Header.png');
+        url('./images/Header_desktop.png');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -416,7 +416,7 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width:500x){
     .header {
         background: linear-gradient(rgba(48, 42, 133, 0.244), rgba(0, 0, 0, 0)), 
-            url('./images/Header_mobile.png'); /* Your mobile optimized image */
+            url('./images/Header_mobile.jpeg'); /* Your mobile optimized image */
         background-size: cover; /* Still useful for mobile if optimized image */
         background-position: center;
         /* You might remove background-attachment: fixed; here if it causes issues */
