@@ -175,7 +175,8 @@ h3 {
 
 p {
     margin: var(--gutter-small-1) 0;
-    margin-bottom: (var(--gutter-huge)0);
+    margin-bottom: var(--gutter-huge)0;
+    margin-top: var(--gutter-small)0;
 }
 
 @media(max-width: 900px) {
