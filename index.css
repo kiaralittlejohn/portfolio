@@ -536,7 +536,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .image-grid img {
   width: 100%;
-  height: max(200px);
+  height: 70%;
   border-radius: 10px; /* optional rounded corners */
   display: block;
 }
