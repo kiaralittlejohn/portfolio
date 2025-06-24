@@ -491,6 +491,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     flex: 0 0 30%;
+    margin-top: var(--gutter-huge);
 }
 
 .work__list {
