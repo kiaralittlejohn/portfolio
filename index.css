@@ -553,7 +553,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .carretes-gif {
-    width: 1000px; /* Or any fixed pixel width you want */
+    width: 100%; /* Or any fixed pixel width you want */
     height: auto; /* Maintain aspect ratio */
 
     /* Or if you want it to fill a certain percentage of its parent container: */
