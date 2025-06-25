@@ -1,0 +1,43 @@
+<p>My First (and Last) Carrete promises a chaotic, stressful, yet undeniably funny 15-minute journey that captures the essence of an<br> 
+                  unforgettable (and perhaps regrettable) night out.<br>
+
+                  The game plunges you into the vibrant, very different, world of a Chilean "carrete" (party) through the eyes of Alex, a Chilean <br>
+                  who's spent five years in Canada and is now struggling to reconnect with his roots. This specific cultural setting, with its distinct <br>
+                  social dynamics and regional slang, creates an authentic parody of a coming of age story in Chilean life.<br>
+                  <br><br>
+                  Our university professors had asked to create a game based on our personal experiences. That is when came up with My First and Last Carrete.
+                  It is based on my experience going to Chilean parties as a young adult after spending my teenage years in Canada.<br>
+                  The differences in language and cultures led to some very awkward and uncomfortable scenarios. This was due to my peers having<br>
+                  matured in an environment which was completely different to mine.<br>
+                  <br><br></p>
+
+
+
+
+
+
+
+                    <video controls>
+                     <source src="./videos/chiptune_lostres.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                     <source src="./videos/chiptune_badbunny.mp4" type="video/mp4">
+                    </video>
+                    <video controls>
+                     <source src="./videos/chiptune_karolg.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+
+
+
+
+
+<p>
+                  The game features chiptune covers of songs that are popular in Chile, those typically played for diverse groups. <br>
+                  However, my music skills at that time weren't what they are now. I had no idea about music theory, and the resulting covers were <br>
+                  completely out of sync. Surprisingly, everyone who played the game <b>LOVED</b> the music. Listening to it caused most people<br> 
+                  to chuckle or to even burst out laughing. It was well-received as the essence of a 'carrete' could still be conveyed even with <br>
+                  the chiptune style, and the off-beat notes added more humor to the experience.
+                </p>
