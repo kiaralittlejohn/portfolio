@@ -546,8 +546,10 @@ body:not(.user-is-tabbing) a:focus {
 .image-grid video {
     display: block;
     width: 100%; /* Make them fill the grid column */
-    height: auto; /* Maintain aspect ratio */
+    height: 300px; /* Maintain aspect ratio */
+    object-fit: contain; /* Scale video to fit without cropping */
     border-radius: 10px; /* Optional, matches your image styling */
+    align-self: center; /* Vertically align in grid cell */
 }
 
 
