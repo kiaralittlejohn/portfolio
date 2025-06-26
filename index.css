@@ -349,6 +349,7 @@ body:not(.user-is-tabbing) a:focus {
     top: 0;
     width: 100%; /* .nav fills the full viewport width */
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add back for styling */
     padding: var(--gutter-normal) 0; /* Add back vertical padding for the nav bar */
 }
 
