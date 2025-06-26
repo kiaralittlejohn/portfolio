@@ -342,7 +342,6 @@ body:not(.user-is-tabbing) a:focus {
 
 
 .nav {
-    display: flex;
     position: fixed;
     top: 0;
     width: 80%; /* .nav fills the full viewport width */
