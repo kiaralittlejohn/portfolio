@@ -340,7 +340,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
-    background: rgba(255, 255, 255, 0.562);
+    background: rgba(22, 14, 12, 0);
     /* ADD THESE PROPERTIES TO MAKE IT STICKY */
     position: fixed; /* This takes the element out of the normal document flow */
     top: 0;          /* Positions it at the very top of the viewport */
