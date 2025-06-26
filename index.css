@@ -369,7 +369,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Reduce the margin between nav items, as 6rem (60px) is very large */
 .nav__item:not(:last-child) {
-    margin-right: 3rem; /* Change from var(--gutter-medium) (6rem) to 3rem (30px) for default */
+    margin-right: var(--gutter-medium); /* Change from var(--gutter-medium) (6rem) to 3rem (30px) for default */
     /* This applies to large screens. Adjust further if needed. */
 }
 
