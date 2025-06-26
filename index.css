@@ -54,6 +54,12 @@
     --border-light: 1px solid rgb(36, 35, 35);
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    /* Ensure no unwanted spacing pushes the viewport content */
+}
+
 html {
     font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
     box-sizing: border-box;
