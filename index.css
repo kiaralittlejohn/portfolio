@@ -195,8 +195,6 @@ h4 {
 }
 
 h4::after {
-    content: '';
-    display: block;
     height: 4px;
     width: 10rem;
     background: var(--pink);
