@@ -340,7 +340,7 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
-    
+    background: rgba(22, 14, 12, 0);
     /* ADD THESE PROPERTIES TO MAKE IT STICKY */
     position: fixed; /* This takes the element out of the normal document flow */
     top: 0;          /* Positions it at the very top of the viewport */
@@ -362,18 +362,30 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
+        /* You might want to remove padding: var(--gutter-normal) 0; from .nav here too,
+           or reduce it to save vertical space on mobile */
+        padding: var(--gutter-small) 0; /* Example: 2rem padding instead of 3rem */
     }
-}
 
-@media(max-width: 400px) {
     .nav__item:not(:last-child) {
-        margin-right: var(--gutter-normal);
+        /* Reduce margin significantly for smaller screens */
+        margin-right: 1.5rem; /* Or even 1rem (10px) if needed */
+    }
+    
+    /* You might also reduce the font size of the links themselves */
+    .nav__link {
+        font-size: 1.6rem; /* Example: slightly smaller font */
+        padding: 0.8rem 0; /* Adjust padding if font size changes */
     }
 }
 
-@media(max-width: 300px) {
-    .nav {
-        font-size: var(--font-size-small);
+/* You could even have a more specific media query for very narrow screens */
+@media(max-width: 350px) {
+    .nav__item:not(:last-child) {
+        margin-right: 0.8rem; /* Even smaller margin for tiny screens */
+    }
+    .nav__link {
+        font-size: 1.5rem;
     }
 }
 
