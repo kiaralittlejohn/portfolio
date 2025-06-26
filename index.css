@@ -352,7 +352,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__items {
-    display: flex;
     list-style: none;
 
     /* THESE ARE THE CRUCIAL LINES FOR CENTERING THE NAV CONTENT */
