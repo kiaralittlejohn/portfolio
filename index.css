@@ -351,9 +351,9 @@ body:not(.user-is-tabbing) a:focus {
     list-style: none;
 }
 
-.nav__item:not(:last-child) {
+/*.nav__item:not(:last-child) {
     margin-right: var(--gutter-medium);
-}
+}*/
 
 @media(max-width: 500px) {
     .nav {
