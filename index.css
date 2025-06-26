@@ -126,7 +126,8 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
@@ -186,6 +187,20 @@ p {
     p { 
         max-width: var(--container-small-width);
     }
+}
+
+h4 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--gutter-medium);
+}
+
+h4::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 10rem;
+    background: var(--pink);
+    margin: var(--gutter-medium) 0;
 }
 
 /* --------------------------------------- */
