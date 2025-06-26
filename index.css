@@ -191,7 +191,7 @@ p {
 
 h4 {
     font-size: var(--font-size-large);
-    margin-bottom: var(--gutter-medium);
+    margin-bottom: var(--gutter-large);
 }
 
 h4::after {
@@ -201,6 +201,11 @@ h4::after {
     width: 10rem;
     background: var(--pink);
     margin: var(--gutter-medium) 0;
+}
+
+.my-text-container {
+    text-align: center; /* This centers all inline-level content inside this div */
+    margin: auto;
 }
 
 /* --------------------------------------- */
