@@ -552,20 +552,6 @@ body:not(.user-is-tabbing) a:focus {
     align-self: center; /* Vertically align in grid cell */
 }
 
-.carretes-gif {
-    width: 100%; /* Or any fixed pixel width you want */
-    height: auto; /* Maintain aspect ratio */
-
-    /* Or if you want it to fill a certain percentage of its parent container: */
-    /* width: 75%; */
-    /* height: auto; */
-
-    /* You can also set a max-width to prevent it from getting too large */
-    /* max-width: 1000px; */
-    /* height: auto; */
-}
-
-
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
