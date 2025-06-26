@@ -364,7 +364,7 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: center;
 
     /* Add horizontal padding to prevent links from touching the max-width edges */
-    padding: 0 var(--gutter-medium); /* Example: 60px padding on left/right for large screens */
+
 }
 
 /* Reduce the margin between nav items, as 6rem (60px) is very large */
