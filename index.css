@@ -337,8 +337,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: center;
-   /* padding: var(--gutter-huge) 0;*/
     position: fixed;
     top: 0;
     width:100%;
@@ -349,6 +347,10 @@ body:not(.user-is-tabbing) a:focus {
 .nav__items {
     display: flex;
     list-style: none;
+
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .nav__item:not(:last-child) {
