@@ -195,7 +195,7 @@ h4 {
 }
 
 h4::after {
-    height: 4px;
+    height: 6px;
     width: 10rem;
     background: var(--pink);
     margin: var(--gutter-medium) 0;
