@@ -54,11 +54,6 @@
     --border-light: 1px solid rgb(36, 35, 35);
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    /* Ensure no unwanted spacing pushes the viewport content */
-}
 
 html {
     font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
@@ -347,7 +342,7 @@ body:not(.user-is-tabbing) a:focus {
     justify-content: right; /* This centers "Art, Projects, About, Contact" within the ul */
     position: fixed;
     top: 0;
-    width: 100%; /* .nav fills the full viewport width */
+    width: 50%; /* .nav fills the full viewport width */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     background: rgba(22, 14, 12, 0.8);
