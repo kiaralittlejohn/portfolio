@@ -352,7 +352,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-huge);
+    margin-right: var(--gutter-medium);
 }
 
 @media(max-width: 500px) {
