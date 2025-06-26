@@ -345,10 +345,10 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     position: fixed;
     top: 0;
-    width: 60%; /* .nav fills the full viewport width */
+    width: 80%; /* .nav fills the full viewport width */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    background: rgba(22, 14, 12, 0.8);
+    background: rgba(22, 14, 12, 0.519);
     padding: var(--gutter-normal) 0;
 
 }
@@ -369,7 +369,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Reduce the margin between nav items, as 6rem (60px) is very large */
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium); /* Change from var(--gutter-medium) (6rem) to 3rem (30px) for default */
+    margin-right: var(--gutter-huge); /* Change from var(--gutter-medium) (6rem) to 3rem (30px) for default */
     /* This applies to large screens. Adjust further if needed. */
 }
 
