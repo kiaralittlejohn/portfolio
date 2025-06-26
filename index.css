@@ -343,13 +343,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
     display: flex;
-    justify-content: right; /* This centers "Art, Projects, About, Contact" within the ul */
     position: fixed;
     top: 0;
     width: 100%; /* .nav fills the full viewport width */
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     background: rgba(22, 14, 12, 0.8);
+    padding: var(--gutter-normal) 0;
 
 }
 
@@ -361,8 +361,7 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-max-width); /* Constrain its width like your .row */
     margin: 0 auto; /* This centers the ul.nav__items within its parent (.nav) */
 
-    /* Now, justify the individual list items within this centered ul */
-
+    justify-content: center;
 
     /* Add horizontal padding to prevent links from touching the max-width edges */
     padding: 0 var(--gutter-medium); /* Example: 60px padding on left/right for large screens */
