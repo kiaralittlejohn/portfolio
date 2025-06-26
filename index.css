@@ -67,6 +67,7 @@ html {
 }
 
 body {
+    padding-top: calc(var(--font-size-small) + (2 * var(--gutter-normal)));
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
@@ -339,6 +340,14 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    
+    /* ADD THESE PROPERTIES TO MAKE IT STICKY */
+    position: fixed; /* This takes the element out of the normal document flow */
+    top: 0;          /* Positions it at the very top of the viewport */
+    width: 100%;     /* Makes it span the full width of the viewport */
+    z-index: 1000;   /* Ensures it stays above other content when scrolling */
+    background: var(--black); /* Add a background color so content doesn't show through */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow for separation */
 }
 
 .nav__items {
