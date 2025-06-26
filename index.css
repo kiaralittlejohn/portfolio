@@ -335,12 +335,16 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
+
 .nav {
     display: flex;
+    
     position: fixed;
     top: 0;
-    width:100%;
+    width: 100%; /* .nav fills the full viewport width */
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: 0 2px 5px rgba(0,0,0,0.2);
 
 }
 
@@ -348,26 +352,51 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     list-style: none;
 
-    max-width: var(--container-max-width);
-    margin: 0 auto;
-    justify-content: center;
+    /* THESE ARE THE CRUCIAL LINES FOR CENTERING THE NAV CONTENT */
+    max-width: var(--container-max-width); /* Constrain its width like your .row */
+    margin: 0 auto; /* This centers the ul.nav__items within its parent (.nav) */
+
+    /* Now, justify the individual list items within this centered ul */
+    justify-content: center; /* This centers "Art, Projects, About, Contact" within the ul */
+
+    /* Add horizontal padding to prevent links from touching the max-width edges */
+    padding: 0 var(--gutter-medium); /* Example: 60px padding on left/right for large screens */
 }
 
+/* Reduce the margin between nav items, as 6rem (60px) is very large */
 .nav__item:not(:last-child) {
-    margin-right: var(--gutter-medium);
+    margin-right: 3rem; /* Change from var(--gutter-medium) (6rem) to 3rem (30px) for default */
+    /* This applies to large screens. Adjust further if needed. */
 }
 
-@media(max-width: 500px) {
-    .nav {
-        justify-content: center;
+/* Ensure mobile-specific styles are also correctly set */
+@media(max-width: 1240px) { /* Matches your .row padding breakpoint */
+    .nav__items {
+        padding: 0 var(--gutter-medium); /* Ensure this padding applies consistently */
     }
 }
 
-/*@media(max-width: 400px) {
+@media(max-width: 600px) {
+    /* No justify-content needed on .nav here, as it's handled by .nav__items */
+    .nav__items {
+        padding: 0 var(--gutter-normal); /* Reduce padding further for smaller screens */
+    }
     .nav__item:not(:last-child) {
-        margin-right: var(--gutter-small);
+        margin-right: 1.5rem; /* 15px */
     }
-}*/
+}
+
+@media(max-width: 400px) {
+    .nav__items {
+        padding: 0 var(--gutter-small); /* Even smaller padding */
+    }
+    .nav__item:not(:last-child) {
+        margin-right: 0.8rem; /* 8px for very small screens */
+    }
+    .nav__link {
+        font-size: var(--font-size-small); /* Adjust font size if necessary */
+    }
+}
 
 @media(max-width: 300px) {
     .nav {
