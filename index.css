@@ -620,6 +620,8 @@ body:not(.user-is-tabbing) a:focus {
     grid-gap: 10px; /* space between images */
     padding: 10px;
     margin: auto;
+    align-self: center;
+
 }
 
 .section-buttons img {
