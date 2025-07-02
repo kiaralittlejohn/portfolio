@@ -636,8 +636,18 @@ body:not(.user-is-tabbing) a:focus {
 .gif-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* responsive columns */
-    grid-gap: 10px; /* space between images */
-    padding: 10px;
+    grid-gap: 5px; /* space between images */
+    padding: 5px;
+}
+
+.gif-grid img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for all image containers */
+    object-fit: contain; /* This is the key: it scales the image to fit within the content box without cropping */
+    border-radius: 10px; /* optional rounded corners */
+    display: block;
+    /* Vertically align the image within its container if it's shorter than the fixed height */
+    align-self: center;
 }
 
 /* --------------------------------------- */
