@@ -642,8 +642,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .gif-grid img {
     width: 100%;
-    height: 300px; /* Set a fixed height for all image containers */
-    /*object-fit: contain; /* This is the key: it scales the image to fit within the content box without cropping */
+    height: 800px; /* Set a fixed height for all image containers */
+    object-fit: contain; /* This is the key: it scales the image to fit within the content box without cropping */
     border-radius: 10px; /* optional rounded corners */
     display: block;
     /* Vertically align the image within its container if it's shorter than the fixed height */
